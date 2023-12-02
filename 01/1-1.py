@@ -6,6 +6,3 @@ with open('input.txt') as f:
         line = ''.join(c for c in line if c.isdigit())
         total += int(line[0] + line[-1])
 print(total)
-
-        
-
