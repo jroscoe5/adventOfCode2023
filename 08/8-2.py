@@ -8,6 +8,7 @@ def find_distance(node, instructions, lookup):
             node = lookup[node][i == 'R']
             steps += 1
             if node[2] == 'Z':
+                print((steps - 1) % len(instructions))
                 break
     return steps
 
